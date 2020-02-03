@@ -1,0 +1,1403 @@
+{
+  "id": "d29d9476-c5b5-4e5a-8ed8-78760c4c5219",
+  "version": "1.1",
+  "name": "Teste US05",
+  "url": "http://localhost/rpvi-gp3/projetoVoto/index.php/login",
+  "tests": [{
+    "id": "0f022c02-5adf-44f6-8883-a374be316be9",
+    "name": "Verificando paginação",
+    "commands": [{
+      "id": "806994e2-e76a-45ab-8300-28ca273bae94",
+      "comment": "",
+      "command": "open",
+      "target": "/rpvi-gp3/projetoVoto/index.php/Item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2591158-e91b-479f-94a1-6a27383224e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8dbb96a-1ca2-40cd-b63d-8bf9b25449b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=td[name=\"nomeItem\"]",
+      "targets": [
+        ["css=td[name=\"nomeItem\"]", "css"],
+        ["css=tr:nth-child(3) > td:nth-child(1)", "css:finder"],
+        ["xpath=//td[@name='nomeItem']", "xpath:attributes"],
+        ["xpath=//div[@id='divBody']/table/tbody/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//tr[3]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6063296-a1fa-4cc9-a00e-9838c1de47d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(7) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(7) > td:nth-child(1)", "css:finder"],
+        ["xpath=(//td[@name='nomeItem'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='divBody']/table/tbody/tr[7]/td", "xpath:idRelative"],
+        ["xpath=//tr[7]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8734be0-4d10-45e6-a4fe-902106428520",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(7) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(7) > td:nth-child(1)", "css:finder"],
+        ["xpath=(//td[@name='nomeItem'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='divBody']/table/tbody/tr[7]/td", "xpath:idRelative"],
+        ["xpath=//tr[7]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "212ec8f3-1012-452a-b16c-6ac829486ad6",
+      "comment": "",
+      "command": "click",
+      "target": "name=btAbrir",
+      "targets": [
+        ["name=btAbrir", "name"],
+        ["css=button[name=\"btAbrir\"]", "css"],
+        ["css=tr:nth-child(3) .btAbrirReuniao", "css:finder"],
+        ["xpath=//button[@name='btAbrir']", "xpath:attributes"],
+        ["xpath=//div[@id='divBody']/table/tbody/tr[3]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cc0d3a28-4e53-4dd5-bd02-3b1d1b72ba8c",
+    "name": "CT4.1",
+    "commands": [{
+      "id": "e539b1ed-96b2-48a2-8254-72fed937d481",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/rpvi-gp3/projetoVoto/index.php/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f4e6fcf-8f0e-4a6d-a126-434b593ecd6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1256x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28a530a6-3774-46b2-b59a-dd40b7a4bfeb",
+      "comment": "",
+      "command": "click",
+      "target": "name=perfil_selecionado",
+      "targets": [
+        ["name=perfil_selecionado", "name"],
+        ["css=select[name=\"perfil_selecionado\"]", "css"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='perfil_selecionado']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_select_perfil']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89ede699-bebd-47b3-bfb6-bdb5bb21bad9",
+      "comment": "",
+      "command": "select",
+      "target": "name=perfil_selecionado",
+      "targets": [],
+      "value": "label=Moderador"
+    }, {
+      "id": "fece91c4-859e-419d-b8df-ad1bb31125e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=option[value=\"moderador\"]",
+      "targets": [
+        ["css=option[value=\"moderador\"]", "css"],
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='moderador']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_select_perfil']/select/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9a123f0-851a-4599-a92b-35ad7f85fe73",
+      "comment": "",
+      "command": "click",
+      "target": "css=button.bt_logar",
+      "targets": [
+        ["css=button.bt_logar", "css"],
+        ["css=.bt_logar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_login_form']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "245966c2-c724-4f1e-b76a-5a861c0c10e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt_entrar_reuniao",
+      "targets": [
+        ["css=.bt_entrar_reuniao", "css:finder"],
+        ["xpath=(//button[@name='btAbrir'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='corpo']/table/tbody/tr[4]/td[9]/button", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[9]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e78d0fb-02d8-48c0-b71c-67ebf3f43171",
+      "comment": "",
+      "command": "click",
+      "target": "name=btAbrir",
+      "targets": [
+        ["name=btAbrir", "name"],
+        ["css=button[name=\"btAbrir\"]", "css"],
+        ["css=tr:nth-child(3) .bt_abrir_reuniao", "css:finder"],
+        ["xpath=//button[@name='btAbrir']", "xpath:attributes"],
+        ["xpath=//div[@id='corpo']/table/tbody/tr[3]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a83aecc0-62aa-44c2-bd73-a3b32c0642a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=customizado",
+      "targets": [
+        ["id=customizado", "id"],
+        ["css=#customizado", "css"],
+        ["css=#customizado", "css:finder"],
+        ["xpath=//input[@id='customizado']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_centro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96ad2de7-798c-43a9-9386-e2065492024b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lista_campos > li:nth-child(2) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(2) > .campo", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd8bc152-bb60-4a3e-a966-964260a36b1c",
+      "comment": "",
+      "command": "type",
+      "target": "css=#lista_campos > li:nth-child(2) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(2) > .campo", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[2]/input", "xpath:position"]
+      ],
+      "value": "teste1"
+    }, {
+      "id": "e2717482-98ef-44c7-be71-4db1b2b4f85d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=#lista_campos > li:nth-child(2) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(2) > .campo", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a5cac642-c3d5-4ab2-991c-f53e25c94140",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b7bc639-0839-461b-b9a8-0cb1107ea26b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbab2ced-9d44-48ca-881a-5e262ec50658",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2acf67f1-716d-4efd-8fd6-b8ed090b959b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lista_campos > li:nth-child(3) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(3) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d93092ce-d94e-43d5-a870-cd96fb8c1f8f",
+      "comment": "",
+      "command": "type",
+      "target": "css=#lista_campos > li:nth-child(3) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(3) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[3]/input", "xpath:position"]
+      ],
+      "value": "teste2"
+    }, {
+      "id": "f2a1f72e-4050-43c1-8df5-f8e79411dc98",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=#lista_campos > li:nth-child(3) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(3) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[3]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "14f0dbb8-5dd1-4f47-9025-37a0faa6ebe3",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b707e19d-ea64-41d2-9de8-251c4b66f9fa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "683c7a9e-78da-40d0-a066-f412f4974b7e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1c5eb92-2667-4fd7-befb-5765abe87e02",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > .campo",
+      "targets": [
+        ["css=li:nth-child(4) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefcc009-d1f9-4700-ade6-96413a6a8e96",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(4) > .campo",
+      "targets": [
+        ["css=li:nth-child(4) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "teste3"
+    }, {
+      "id": "6a951680-a621-41b8-8129-047376abe730",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=li:nth-child(4) > .campo",
+      "targets": [
+        ["css=li:nth-child(4) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "09f0a846-1c95-42ea-9800-f9b90362884b",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5df9b19-b1dd-47bd-9ac8-073d461869f6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b351fda-c491-4cc1-9e12-22866054c83e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97751878-289b-40e7-b638-97995bf4ae67",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > .campo",
+      "targets": [
+        ["css=li:nth-child(5) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fac97c6-8a6e-4727-9809-d55fafe4442a",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(5) > .campo",
+      "targets": [
+        ["css=li:nth-child(5) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": "teste4"
+    }, {
+      "id": "03b3b88f-77c7-4a91-b108-d595aaf05a03",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=li:nth-child(5) > .campo",
+      "targets": [
+        ["css=li:nth-child(5) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3798e138-594b-46d7-adec-68b3938e53f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb556315-2188-4ca4-92b4-2d67b0b4a657",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d50e398-ade0-4c34-adc4-5db00bb53b0b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5021a02d-be2f-4bd0-8bc7-8981611891d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) > .campo",
+      "targets": [
+        ["css=li:nth-child(6) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[6]/input", "xpath:idRelative"],
+        ["xpath=//li[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36904436-27f8-4df9-91f8-3c4faaceeea1",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(6) > .campo",
+      "targets": [
+        ["css=li:nth-child(6) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[6]/input", "xpath:idRelative"],
+        ["xpath=//li[6]/input", "xpath:position"]
+      ],
+      "value": "teste5"
+    }, {
+      "id": "5baacf06-885f-41bc-be1f-d16b8c0d015a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=li:nth-child(6) > .campo",
+      "targets": [
+        ["css=li:nth-child(6) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[6]/input", "xpath:idRelative"],
+        ["xpath=//li[6]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "60059055-4abb-4bb3-b59f-9ac017ad853a",
+      "comment": "",
+      "command": "click",
+      "target": "id=bt_encaminhar_votacao",
+      "targets": [
+        ["id=bt_encaminhar_votacao", "id"],
+        ["css=#bt_encaminhar_votacao", "css"],
+        ["css=#bt_encaminhar_votacao", "css:finder"],
+        ["xpath=//button[@id='bt_encaminhar_votacao']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_centro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32843297-069a-4b10-bf0f-f30257312e2c",
+      "comment": "Falotou a parada de encaminhar para outra pagina e comparar os titles pra ver se enviou as 5 op de voto mesmo",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0145b68a-9443-402b-8343-275b38dca73f",
+    "name": "CT4.2",
+    "commands": [{
+      "id": "2d063fbe-d5ad-407a-b8d3-081c056aba6c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/rpvi-gp3/projetoVoto/index.php/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca9be8fd-3f18-4e45-85f0-5af401fc3848",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1256x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a9a4b3f-2675-4ff8-b96d-9202fcb8b10a",
+      "comment": "",
+      "command": "click",
+      "target": "name=perfil_selecionado",
+      "targets": [
+        ["name=perfil_selecionado", "name"],
+        ["css=select[name=\"perfil_selecionado\"]", "css"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='perfil_selecionado']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_select_perfil']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6881698-8bf1-485c-8d83-7e31b25f0e39",
+      "comment": "",
+      "command": "select",
+      "target": "name=perfil_selecionado",
+      "targets": [],
+      "value": "label=Moderador"
+    }, {
+      "id": "0fced808-7c10-4033-aa59-0dbb9974d765",
+      "comment": "",
+      "command": "click",
+      "target": "css=option[value=\"moderador\"]",
+      "targets": [
+        ["css=option[value=\"moderador\"]", "css"],
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='moderador']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_select_perfil']/select/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5be4013d-7fd0-4a92-b850-fd15e665874d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button.bt_logar",
+      "targets": [
+        ["css=button.bt_logar", "css"],
+        ["css=.bt_logar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_login_form']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f0b390b-0d47-4a15-a2d1-c6f23f698e43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt_entrar_reuniao",
+      "targets": [
+        ["css=.bt_entrar_reuniao", "css:finder"],
+        ["xpath=(//button[@name='btAbrir'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='corpo']/table/tbody/tr[4]/td[9]/button", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[9]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5961a5b7-1628-4668-8636-4d68c5ae20ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=btAbrir",
+      "targets": [
+        ["name=btAbrir", "name"],
+        ["css=button[name=\"btAbrir\"]", "css"],
+        ["css=tr:nth-child(3) .bt_abrir_reuniao", "css:finder"],
+        ["xpath=//button[@name='btAbrir']", "xpath:attributes"],
+        ["xpath=//div[@id='corpo']/table/tbody/tr[3]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "378480ff-71c4-41c1-893e-199c197fc871",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css"],
+        ["css=form", "css:finder"],
+        ["xpath=//div[@id='bloco_centro']/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc2ab33-52f9-4347-9b70-5da630b578f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=customizado",
+      "targets": [
+        ["id=customizado", "id"],
+        ["css=#customizado", "css"],
+        ["css=#customizado", "css:finder"],
+        ["xpath=//input[@id='customizado']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_centro']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b589940-5448-47e7-831a-f331aff1a692",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lista_campos > li:nth-child(2) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(2) > .campo", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eab0c05-9e0b-4b13-b3ee-c70a149e68a6",
+      "comment": "",
+      "command": "type",
+      "target": "css=#lista_campos > li:nth-child(2) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(2) > .campo", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[2]/input", "xpath:position"]
+      ],
+      "value": "BATATA"
+    }, {
+      "id": "bccac81f-0551-48d5-bce9-79568b914a76",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbd8ec70-5458-4ca3-b270-31a33d6793ca",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30398239-29e1-4e4d-8a48-11b64f5ee471",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f97c3c7-59d2-40d2-b22d-d5c8eb6b8af1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lista_campos > li:nth-child(3) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(3) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86fccb89-2e1f-4fab-b1da-e91d85c63631",
+      "comment": "",
+      "command": "type",
+      "target": "css=#lista_campos > li:nth-child(3) > .campo",
+      "targets": [
+        ["css=#lista_campos > li:nth-child(3) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/ol/li[3]/input", "xpath:position"]
+      ],
+      "value": "batata"
+    }, {
+      "id": "40d77ee1-b580-4043-bc9e-8279ec165343",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c1580b4-8156-44e4-b5c9-c4e7ea37cac0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09f20bdd-8a3e-4920-993f-af405f2d0f03",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6c20acf-211d-4510-b20d-0069c0390aa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > .campo",
+      "targets": [
+        ["css=li:nth-child(4) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "758e4bd8-ce07-4da8-b922-67746d8f80fc",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(4) > .campo",
+      "targets": [
+        ["css=li:nth-child(4) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "arroz"
+    }, {
+      "id": "d3cdde92-9099-44c0-8425-7c6eb44a2060",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "911ec1a8-fa9e-40a3-9f83-fec771021f1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4111633-48c0-451c-9003-4efed26db51f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d275e18-6d37-416d-b3f8-60b0cd3a71e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > .campo",
+      "targets": [
+        ["css=li:nth-child(5) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "953e94df-e849-45b2-adfb-09c17d6d9928",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(5) > .campo",
+      "targets": [
+        ["css=li:nth-child(5) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[5]/input", "xpath:idRelative"],
+        ["xpath=//li[5]/input", "xpath:position"]
+      ],
+      "value": "feijao"
+    }, {
+      "id": "4ca2056a-c0fd-4385-8356-1bbaac81ef0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e503950b-f59e-4f84-a00d-04688ee22d77",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d43e6f28-8765-4005-a158-c5b97d46fab8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfaa6cc9-84c8-497f-b673-72a907ffdbd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(6) > .campo",
+      "targets": [
+        ["css=li:nth-child(6) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[6]/input", "xpath:idRelative"],
+        ["xpath=//li[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8de085af-9046-46cc-9a45-b7e643c43647",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(6) > .campo",
+      "targets": [
+        ["css=li:nth-child(6) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[6]/input", "xpath:idRelative"],
+        ["xpath=//li[6]/input", "xpath:position"]
+      ],
+      "value": "batata"
+    }, {
+      "id": "9fe54998-f7c9-48c4-bbb2-b6b93c6554c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90bdd7d9-70d7-4287-b55c-55e1bcb10513",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f22299d3-6686-4833-b223-c9381b629418",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21f5ab98-f572-430e-9ba9-3c72b3bc3138",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) > .campo",
+      "targets": [
+        ["css=li:nth-child(7) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[7]/input", "xpath:idRelative"],
+        ["xpath=//li[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ff61ab-149f-46f3-b0d9-ccfe7981b373",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(7) > .campo",
+      "targets": [
+        ["css=li:nth-child(7) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[7]/input", "xpath:idRelative"],
+        ["xpath=//li[7]/input", "xpath:position"]
+      ],
+      "value": "o que falta?"
+    }, {
+      "id": "0acba52e-916b-488a-a67c-31f712671cd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7d2731-ed98-4e0e-a8f9-caa9f06d2544",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9bd0032-4958-4849-a0cc-85faa4790339",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f57e85c3-7f8d-4b78-ab86-538366861572",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8) > .campo",
+      "targets": [
+        ["css=li:nth-child(8) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[8]/input", "xpath:idRelative"],
+        ["xpath=//li[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "101917e7-4162-4db8-863f-bc70c555a969",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(8) > .campo",
+      "targets": [
+        ["css=li:nth-child(8) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[8]/input", "xpath:idRelative"],
+        ["xpath=//li[8]/input", "xpath:position"]
+      ],
+      "value": "o que falta?"
+    }, {
+      "id": "0411b8c8-b771-4617-a86c-901d1b22554b",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21e6efae-fc93-4400-b3f6-0f7d7c80ab48",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6201351f-8e9f-4bb4-8360-df0670f26589",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70cacae8-d861-4a25-9b7a-d492905c20b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//ol[@id='lista_campos']/li[8]", "xpath:idRelative"],
+        ["xpath=//li[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93888fc7-76e9-4384-b8f3-2c7304ae550e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(9) > .campo",
+      "targets": [
+        ["css=li:nth-child(9) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[9]/input", "xpath:idRelative"],
+        ["xpath=//li[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "946871ca-1c82-448d-b1ce-a4c9abfd2115",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(9) > .campo",
+      "targets": [
+        ["css=li:nth-child(9) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[9]/input", "xpath:idRelative"],
+        ["xpath=//li[9]/input", "xpath:position"]
+      ],
+      "value": "a minha rola"
+    }, {
+      "id": "c3dade6e-91de-4feb-9ffc-9c80a32374dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56c5bf82-8efa-41a2-a7b9-3cb3d9559e58",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa0fce2a-ff28-408c-8b5f-cb359801a2df",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2468f2e3-7574-4a2a-be9d-5e57dab87530",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(10) > .campo",
+      "targets": [
+        ["css=li:nth-child(10) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[9]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[10]/input", "xpath:idRelative"],
+        ["xpath=//li[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da7c4c6f-893b-4026-8cb6-525e4d5eb27e",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(10) > .campo",
+      "targets": [
+        ["css=li:nth-child(10) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[9]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[10]/input", "xpath:idRelative"],
+        ["xpath=//li[10]/input", "xpath:position"]
+      ],
+      "value": "batendo na sua cara"
+    }, {
+      "id": "e157c616-02ff-47a3-b7fa-ec6fff94b421",
+      "comment": "",
+      "command": "click",
+      "target": "id=add_campo",
+      "targets": [
+        ["id=add_campo", "id"],
+        ["linkText=Adicionar novas opções de voto", "linkText"],
+        ["css=#add_campo", "css"],
+        ["css=#add_campo", "css:finder"],
+        ["xpath=//a[contains(text(),'Adicionar novas opções de voto')]", "xpath:link"],
+        ["xpath=//a[@id='add_campo']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_add_campo']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa9169f5-59ff-4bfd-b66b-dccb202ee110",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(11) > .campo",
+      "targets": [
+        ["css=li:nth-child(11) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[10]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[11]/input", "xpath:idRelative"],
+        ["xpath=//li[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c569a359-06ed-4dce-a323-3b983758d056",
+      "comment": "",
+      "command": "type",
+      "target": "css=li:nth-child(11) > .campo",
+      "targets": [
+        ["css=li:nth-child(11) > .campo", "css:finder"],
+        ["xpath=(//input[@type='text'])[10]", "xpath:attributes"],
+        ["xpath=//ol[@id='lista_campos']/li[11]/input", "xpath:idRelative"],
+        ["xpath=//li[11]/input", "xpath:position"]
+      ],
+      "value": "na sua na sua cara"
+    }, {
+      "id": "834d9d8e-7815-472d-9b56-66f13726ba3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bt_encaminhar_votacao",
+      "targets": [
+        ["id=bt_encaminhar_votacao", "id"],
+        ["css=#bt_encaminhar_votacao", "css"],
+        ["css=#bt_encaminhar_votacao", "css:finder"],
+        ["xpath=//button[@id='bt_encaminhar_votacao']", "xpath:attributes"],
+        ["xpath=//div[@id='bloco_centro']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f4db7eec-5ae2-47a1-8cc6-a9e77f520453",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0f022c02-5adf-44f6-8883-a374be316be9"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/rpvi-gp3/projetoVoto/index.php/login"],
+  "plugins": []
+}
